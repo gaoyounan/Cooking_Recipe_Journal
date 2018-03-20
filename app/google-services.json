@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "244490566309",
+    "firebase_url": "https://cooking-reci.firebaseio.com",
+    "project_id": "cooking-reci",
+    "storage_bucket": "cooking-reci.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244490566309:android:edd4f32068c9a3ea",
+        "android_client_info": {
+          "package_name": "com.example.gaoyounan.cooking_recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244490566309-4htcklnpr5cb20nuk7dvcc76kfs0lq7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gaoyounan.cooking_recipe",
+            "certificate_hash": "8c3fc80ffdbc02de53c150a26433cfdaa3c558dc"
+          }
+        },
+        {
+          "client_id": "244490566309-6tkgh01l7r4moesurpd4r7imrc2spvnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdhfrsefZBY5G7lb3ICEcIxcbXijP3zgM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244490566309-6tkgh01l7r4moesurpd4r7imrc2spvnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
