@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_recipe_dynamic_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:maxLength="50"
+    android:background="@android:color/transparent"
+    android:drawablePadding="12dp"
+    android:padding="8dp"
+    android:hint="Enter your recipe description"
+    android:textColorHint="@android:color/black"
+    android:maxLines="1"
+    android:layout_marginTop="4dp"
+    android:layout_margin="5dp"
+    android:textColor="@android:color/black"/>
+

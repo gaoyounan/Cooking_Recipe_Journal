@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRecipeActivity">
+
+    <include layout="@layout/layout_back_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_back_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/recipe_update_picture"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/chooseImageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="Choose"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txt_recipe_name"
+                    android:inputType="textMultiLine"
+                    android:gravity="left|top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1000"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="@android:color/black"
+                    android:layout_marginTop="4dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:focusable="false" />
+
+                <EditText
+                    android:id="@+id/txt_recipe_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="left|top"
+                    android:maxLength="1000"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:hint="Enter your recipe description"
+                    android:textColorHint="@android:color/black"
+                    android:layout_marginTop="4dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/txt_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="left|top"
+                    android:maxLength="1000"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:hint="Please Input URL E.g.https://cnn.com"
+                    android:textColorHint="@android:color/black"
+                    android:layout_marginTop="4dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ingredients_button"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_add_ingredient"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/plus"
+                        android:drawablePadding="6dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true" />
+
+                    <Button
+                        android:id="@+id/button_minus_ingredient"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/minus"
+                        android:drawablePadding="6dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="Ingredients"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ingredients_input_layout"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/direction_button"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_add_direction"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/plus"
+                        android:drawablePadding="6dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true" />
+
+                    <Button
+                        android:id="@+id/button_minus_direction"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/minus"
+                        android:drawablePadding="6dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="Direction"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/direction_input_layout"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/buttonUpdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffa351"
+                    android:text="Update Recipe"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

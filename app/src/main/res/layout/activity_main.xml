@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_create_in_main"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:layout_marginTop="3dp"
