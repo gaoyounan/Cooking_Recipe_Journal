@@ -123,7 +123,7 @@ public static RecipeImageUtils getInstance()
     return instance;
 }
 ```
-**2. Dynamic adding and removing "textView" or "editView" into the LinearLayout.**
+**3. Dynamic adding and removing "textView" or "editView" into the LinearLayout.**
 ```xml
 <LinearLayout
     android:layout_width="match_parent"
