@@ -271,6 +271,14 @@ public class EditRecipeActivity extends AppCompatActivity {
 
         recipeEntity.setDirection(direction_list);
 
+        if(txt_url_edit_text.getText() != null)
+        {
+            String url_text = txt_url_edit_text.getText().toString();
+            recipeEntity.setUrl(url_text.toString());
+        }
+
+
+
         return recipeEntity;
     }
 

@@ -52,6 +52,7 @@ public class CreateRecipeActivity extends AppCompatActivity {
 
     private EditText recipe_name_edit_text;
     private EditText recipe_description_edit_text;
+    private EditText txt_url_edit_text;
 
     private int ingredients_nums = 0;
     private int direction_nums = 0;
@@ -186,6 +187,12 @@ public class CreateRecipeActivity extends AppCompatActivity {
         }
 
         recipeEntity.setDirection(direction_list);
+
+        if(txt_url_edit_text.getText() != null)
+        {
+            String url_text = txt_url_edit_text.getText().toString();
+            recipeEntity.setUrl(url_text.toString());
+        }
     }
 
     @Override
@@ -229,6 +236,7 @@ public class CreateRecipeActivity extends AppCompatActivity {
 
         recipe_name_edit_text = findViewById(R.id.txt_recipe_name);
         recipe_description_edit_text = findViewById(R.id.txt_recipe_description);
+        txt_url_edit_text = findViewById(R.id.txt_url);
 
 
         buttonCreate = findViewById(R.id.buttonCreate);
